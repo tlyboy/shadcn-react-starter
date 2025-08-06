@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -42,16 +42,6 @@ html.dark {
 
 .dark::view-transition-new(root) {
   z-index: 1;
-}
-
-@layer components {
-  .btn {
-    @apply inline-block cursor-pointer rounded bg-[#3498db] px-4 py-1 text-white !outline-none hover:bg-[#2980b9] disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
-  }
-
-  .icon-btn {
-    @apply inline-block cursor-pointer opacity-75 transition duration-200 ease-in-out select-none hover:text-[#3498db] hover:opacity-100;
-  }
 }
 
 @theme inline {
